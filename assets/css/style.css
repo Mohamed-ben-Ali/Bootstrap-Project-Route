@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Start Variables */
+:root{
+    --white-color:#fff;
+    --main-color:#ff206e;
+}
+/* End Variables */
+/* START GLOBAL */
+.section-title h2{
+    color: #f1f1f1;
+    font-size: 6rem;
+    letter-spacing: 20px;
+    font-weight: 900
+}
+.section-title h3{
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+/* End GLOBAL */
+/* START HEADER */
+#home{
+    background-image: url('../images/hermes-rivera-6k78FL6hlN8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ; 
+    color:var(--white-color);
+}
+#home a{
+color: var(--main-color);
+text-decoration: none;
+}
+.icon{
+width: 4rem;
+height: 4rem;
+border-radius: 50%;
+border-color: rgba(255, 255, 255, 0.3)!important;
+transition: all 1s;
+}
+.icon:hover{
+    border-color: var(--white-color)!important;
+    cursor: pointer;
+}
+/* END HEADER */
+/* S T A R T N A V B A R */
+.navbar-expand-md .navbar-nav .nav-link{
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-nav .nav-link.active{
+    color: var(--main-color);
+}
+
+.navbar-expand-md .navbar-nav .nav-link:hover{
+    color: var(--main-color);
+}
+.navbar-dark{
+    text-transform: uppercase;
+}
+/* E N D N A V B A R */
+/* START ABOUT */
+#about{
+    background: url('../images/Light-dot.jpg')  ;
+    position: relative;
+}
+#about p{
+    font-size:1.2rem;
+}
+#about .about-p{
+    color: var(--main-color);
+    font-weight: bolder;
+    font-size: 22px;
+}
+/* END ABOUT */
+/* START SERVICES */
+#servics{
+    background-image: url('../images/dark-dott.avif');
+}
+#servics .item h3:after{
+    content: " ";
+    width: 20%;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition:all  1s;
+}
+#servics .item:hover h3:after{
+    content: " ";
+    width: 45%;
+    height: 2px;
+}
+#servics  i{
+    transition:all  1s;
+}
+#servics .item:hover i{
+    color: var(--main-color);
+}
+.carousel-indicators [data-bs-target]{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-indent: 0;
+}
+/* END SERVICES */
+/* S  T A R T TAB SECTION  */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active , .nav-tabs ,.nav-tabs .nav-link:focus, .nav-tabs .nav-link{
+    border:none;
+    font-weight: bold;
+  }
+  .nav-tabs .nav-link.active{
+    color: var(--main-color);
+  }
+  .nav-tabs .nav-link{
+    color: gray;
+  }
+  /* E  N D TAB SECTION */

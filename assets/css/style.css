@@ -27,6 +27,17 @@
         letter-spacing: 17px;
     }
     }
+    @media (max-width:480px) {
+        .section-title h2{
+        display: none;
+        }
+        }
+        @media (max-width:490px) {
+            .section-title h3{
+                margin: 50px 0;
+            }
+            }
+        
 /* End GLOBAL */
 /* START HEADER */
 #home{

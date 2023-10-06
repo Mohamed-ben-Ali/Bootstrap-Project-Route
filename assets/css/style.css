@@ -21,6 +21,12 @@
     font-weight: bold;
 
 }
+@media (max-width:676px) {
+    .section-title h2{
+        font-size: 5rem;
+        letter-spacing: 17px;
+    }
+    }
 /* End GLOBAL */
 /* START HEADER */
 #home{
@@ -29,6 +35,7 @@
     background-size: cover;
     background-position: center center ; 
     color:var(--white-color);
+
 }
 #home a{
 color: var(--main-color);
@@ -44,6 +51,11 @@ transition: all 1s;
 .icon:hover{
     border-color: var(--white-color)!important;
     cursor: pointer;
+}
+@media (max-width:767px) {
+    .social-icons{
+        display: none !important;
+    }
 }
 /* END HEADER */
 /* S T A R T N A V B A R */
